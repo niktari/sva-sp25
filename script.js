@@ -41,32 +41,21 @@ letters.forEach(letter => {
         } else {
             zoomLetter.innerHTML = letter.textContent.toUpperCase() + letter.textContent.toLowerCase();
         }
-        letter.style.opacity = "0.3";
+        // letter.style.opacity = "0.3";
 
         if(kernLetters.includes(letter.textContent)) {
             zoomLetter.style.letterSpacing = "-0.08em";
         } else {
             zoomLetter.style.letterSpacing = "-0.04em";
         }
-
-
-        // kernLetters.forEach(kernLetter => {
-        //     if(letter.textContent.includes(kernLetter) || letter.textContent.includes(kernLetter.toUpperCase())) {
-        //         zoomLetter.style.letterSpacing = "-0.08em"
-        //         console.log('hi')
-        //     } else {
-        //         zoomLetter.style.letterSpacing = "-0.04em"
-        //     }
-        // })
     }
 
     letter.onmouseout = function() {
         zoomLetter.style.opacity = 0;
         gridLines.style.opacity = 0;
-        // zoomLetter.innerHTML = "";
 
-        setTimeout(() => {
-            letter.style.opacity = "1";
-        }, 1000)
+        // setTimeout(() => {
+        //     letter.style.opacity = "1";
+        // }, 1000)
     }
 })
