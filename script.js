@@ -43,11 +43,11 @@ letters.forEach(letter => {
         }
         // letter.style.opacity = "0.3";
 
-        if(kernLetters.includes(letter.textContent)) {
-            zoomLetter.style.letterSpacing = "-0.08em";
-        } else {
-            zoomLetter.style.letterSpacing = "-0.04em";
-        }
+        // if(kernLetters.includes(letter.textContent)) {
+        //     zoomLetter.style.letterSpacing = "-0.08em";
+        // } else {
+        //     zoomLetter.style.letterSpacing = "-0.04em";
+        // }
     }
 
     letter.onmouseout = function() {
